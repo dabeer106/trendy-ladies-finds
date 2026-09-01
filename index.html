@@ -1,60 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trendy Ladies Finds</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trendy Ladies Finds ✨</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff7fa;color:#292329}
-header{background:linear-gradient(135deg,#ffdbe8,#fff);padding:55px 20px;text-align:center}
-nav{padding:18px;text-align:center;background:#fff;position:sticky;top:0;border-bottom:1px solid #f1dce5}
-nav a{margin:0 12px;color:#9b4968;text-decoration:none;font-weight:700}
-h1{font-size:42px;margin:10px 0;color:#9b4968}h2{text-align:center;color:#9b4968}
-.hero{max-width:800px;margin:auto;font-size:18px;line-height:1.6}
-.btn{display:inline-block;margin-top:18px;padding:13px 25px;background:#c85d82;color:white;text-decoration:none;border-radius:25px}
-section{max-width:1100px;margin:50px auto;padding:0 20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#f8f6f1;color:#302b2d}
+nav{position:sticky;top:0;background:#fff;z-index:10;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e4ddd2}
+.logo{font-size:21px;font-weight:bold;color:#5d4052}
+nav a{margin-left:20px;text-decoration:none;color:#5b5652;font-weight:bold}
+.hero{text-align:center;padding:80px 20px;background:linear-gradient(135deg,#e9eee6,#fff,#eee8df);border-radius:0 0 35px 35px}
+.badge{display:inline-block;background:#eef1eb;color:#6b4658;padding:8px 17px;border-radius:30px;font-size:12px;font-weight:bold;letter-spacing:1px}
+.hero h1{font-size:55px;color:#5d4052;margin:20px 0 12px}
+.hero p{max-width:650px;margin:auto;color:#68625d;font-size:18px}
+.btn{display:inline-block;margin-top:25px;background:#6b4658;color:white;padding:14px 27px;border-radius:30px;text-decoration:none;font-weight:bold}
+section{max-width:1150px;margin:auto;padding:65px 22px}
+h2{text-align:center;color:#5d4052;font-size:32px;margin-bottom:8px}
+.subtitle{text-align:center;color:#756e68;margin-bottom:30px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
-.card{background:white;border-radius:18px;padding:25px;text-align:center;box-shadow:0 5px 20px #ead9df}
-.icon{font-size:45px}.card p{color:#777;line-height:1.5}
-footer{text-align:center;padding:35px;background:#fff;color:#777}
-.disclosure{font-size:13px;max-width:800px;margin:15px auto;line-height:1.5}
+.card{background:#fffdf9;border:1px solid #e3ddd3;border-radius:22px;padding:25px;text-align:center;box-shadow:0 8px 25px #ddd6cc;transition:.2s}
+.card:hover{transform:translateY(-5px)}
+.icon{font-size:42px;background:#eef1eb;border-radius:20px;padding:15px;display:inline-block}
+.card h3{color:#403a3d;margin-bottom:6px}
+.card p{color:#756e68;font-size:14px}
+.featured{background:#e9eee6;border-radius:30px}
+.product{padding:0;overflow:hidden;text-align:left}
+.pic{height:180px;background:linear-gradient(135deg,#dfe7dc,#faf8f3);display:flex;align-items:center;justify-content:center;font-size:75px}
+.info{padding:20px}
+.shop{display:inline-block;border:1px solid #c9b79f;color:#6b4658;padding:9px 15px;border-radius:20px;font-weight:bold;text-decoration:none}
+.about{background:#fffdf9;border-radius:25px;padding:30px;border:1px solid #e3ddd3}
+footer{background:#302b2d;color:#f4eee5;text-align:center;padding:35px 20px;border-top:4px solid #b99b68}
+@media(max-width:700px){
+nav{flex-direction:column;gap:10px}
+nav a{margin:0 7px}
+.hero h1{font-size:40px}
+}
 </style>
 </head>
 <body>
-<nav><a href="#home">Home</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
 
-<header id="home">
-<h1>Trendy Ladies Finds ✨</h1>
-<div class="hero">
-<p>Discover stylish, cute and affordable fashion, beauty and accessory finds for women.</p>
-<p>New product picks and shopping inspiration — all in one place.</p>
-<a class="btn" href="#categories">Explore Finds</a>
+<nav>
+<div class="logo">Trendy Ladies Finds ✨</div>
+<div>
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#featured">Featured</a>
+<a href="#about">About</a>
 </div>
+</nav>
+
+<header class="hero" id="home">
+<span class="badge">STYLE • BEAUTY • ACCESSORIES</span>
+<h1>Find Your Next Favorite ✨</h1>
+<p>Discover stylish, cute and affordable finds for women — from handbags and jewelry to beauty essentials and gift ideas.</p>
+<a class="btn" href="#featured">Explore Finds →</a>
 </header>
 
 <section id="categories">
-<h2>Shop Categories</h2>
+<h2>Shop by Category</h2>
+<p class="subtitle">Explore our favorite ladies' finds.</p>
 <div class="grid">
-<div class="card"><div class="icon">👛</div><h3>Handbags</h3><p>Elegant and trendy bags for every occasion.</p></div>
-<div class="card"><div class="icon">👗</div><h3>Fashion</h3><p>Stylish women's fashion and everyday essentials.</p></div>
-<div class="card"><div class="icon">💍</div><h3>Jewelry</h3><p>Cute accessories to complete your look.</p></div>
-<div class="card"><div class="icon">💄</div><h3>Beauty</h3><p>Beauty and self-care product discoveries.</p></div>
-<div class="card"><div class="icon">👠</div><h3>Shoes</h3><p>Fashionable footwear and everyday favorites.</p></div>
+<div class="card"><div class="icon">👜</div><h3>Handbags</h3><p>Elegant and trendy bags for everyday style.</p></div>
+<div class="card"><div class="icon">👗</div><h3>Fashion</h3><p>Stylish women's fashion and essentials.</p></div>
+<div class="card"><div class="icon">💎</div><h3>Jewelry</h3><p>Cute accessories to complete your look.</p></div>
+<div class="card"><div class="icon">💄</div><h3>Beauty</h3><p>Beauty and self-care discoveries.</p></div>
+<div class="card"><div class="icon">👠</div><h3>Shoes</h3><p>Fashionable footwear for every occasion.</p></div>
 <div class="card"><div class="icon">🎁</div><h3>Gift Ideas</h3><p>Lovely gift inspiration for women.</p></div>
 </div>
 </section>
 
+<section class="featured" id="featured">
+<h2>Featured Finds</h2>
+<p class="subtitle">Our favorite products and shopping inspiration.</p>
+<div class="grid">
+<div class="card product"><div class="pic">👜</div><div class="info"><h3>Trendy Handbag</h3><p>Chic everyday style with a feminine touch.</p><a class="shop" href="#about">Shop Find →</a></div></div>
+<div class="card product"><div class="pic">💍</div><div class="info"><h3>Elegant Jewelry</h3><p>Simple accessories that make any outfit shine.</p><a class="shop" href="#about">Shop Find →</a></div></div>
+<div class="card product"><div class="pic">💄</div><div class="info"><h3>Beauty Pick</h3><p>Affordable beauty finds worth checking out.</p><a class="shop" href="#about">Shop Find →</a></div></div>
+<div class="card product"><div class="pic">👠</div><div class="info"><h3>Chic Shoes</h3><p>Elegant footwear to finish your look.</p><a class="shop" href="#about">Shop Find →</a></div></div>
+<div class="card product"><div class="pic">🎁</div><div class="info"><h3>Gift Favorite</h3><p>Pretty gift ideas for someone special.</p><a class="shop" href="#about">Shop Find →</a></div></div>
+</div>
+</section>
+
 <section id="about">
-<h2>About Us</h2>
-<div class="card">
-<p>Welcome to Trendy Ladies Finds! We share hand-picked women's fashion, beauty and accessory products that are stylish and budget-friendly.</p>
-<p><b>Affiliate disclosure:</b> Some links on this website may become affiliate links. If you purchase through an affiliate link, we may earn a commission at no extra cost to you.</p>
+<div class="about">
+<h2>About Trendy Ladies Finds</h2>
+<p>We share hand-picked women's fashion, beauty, accessories and gift ideas that are stylish and budget-friendly.</p>
+<p><b>Affiliate disclosure:</b> Some links on this website may be affiliate links. If you purchase through an affiliate link, we may earn a commission at no extra cost to you.</p>
 </div>
 </section>
 
 <footer>
+<b>Trendy Ladies Finds ✨</b>
+<p>Style • Beauty • Accessories • Gift Ideas</p>
 <p>© 2026 Trendy Ladies Finds</p>
-<p class="disclosure">Product availability and prices may change. Please check the retailer's product page for the latest information.</p>
 </footer>
+
 </body>
 </html>
