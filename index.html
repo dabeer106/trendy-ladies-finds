@@ -13,7 +13,7 @@ body{
 margin:0;
 font-family:Arial,sans-serif;
 background:#f8f6f1;
-color:#302b2d
+color:#302b2d;
 }
 
 nav{
@@ -25,27 +25,27 @@ padding:16px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-border-bottom:1px solid #e4ddd2
+border-bottom:1px solid #e4ddd2;
 }
 
 .logo{
 font-size:21px;
 font-weight:bold;
-color:#5d4052
+color:#5d4052;
 }
 
 nav a{
 margin-left:20px;
 text-decoration:none;
 color:#5b5652;
-font-weight:bold
+font-weight:bold;
 }
 
 .hero{
 text-align:center;
 padding:80px 20px;
 background:linear-gradient(135deg,#e9eee6,#fff,#eee8df);
-border-radius:0 0 35px 35px
+border-radius:0 0 35px 35px;
 }
 
 .badge{
@@ -56,20 +56,20 @@ padding:8px 17px;
 border-radius:30px;
 font-size:12px;
 font-weight:bold;
-letter-spacing:1px
+letter-spacing:1px;
 }
 
 .hero h1{
 font-size:55px;
 color:#5d4052;
-margin:20px 0 12px
+margin:20px 0 12px;
 }
 
 .hero p{
 max-width:650px;
 margin:auto;
 color:#68625d;
-font-size:18px
+font-size:18px;
 }
 
 .btn{
@@ -80,32 +80,32 @@ color:white;
 padding:14px 27px;
 border-radius:30px;
 text-decoration:none;
-font-weight:bold
+font-weight:bold;
 }
 
 section{
 max-width:1150px;
 margin:auto;
-padding:65px 22px
+padding:65px 22px;
 }
 
 h2{
 text-align:center;
 color:#5d4052;
 font-size:32px;
-margin-bottom:8px
+margin-bottom:8px;
 }
 
 .subtitle{
 text-align:center;
 color:#756e68;
-margin-bottom:30px
+margin-bottom:30px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-gap:20px
+gap:20px;
 }
 
 .card{
@@ -115,11 +115,11 @@ border-radius:22px;
 padding:25px;
 text-align:center;
 box-shadow:0 8px 25px #ddd6cc;
-transition:.2s
+transition:.2s;
 }
 
 .card:hover{
-transform:translateY(-5px)
+transform:translateY(-5px);
 }
 
 .icon{
@@ -127,58 +127,68 @@ font-size:42px;
 background:#eef1eb;
 border-radius:20px;
 padding:15px;
-display:inline-block
+display:inline-block;
 }
 
 .card h3{
 color:#403a3d;
-margin-bottom:6px
+margin-bottom:6px;
 }
 
 .card p{
 color:#756e68;
-font-size:14px
+font-size:14px;
 }
 
 .featured{
 background:#e9eee6;
-border-radius:30px
+border-radius:30px;
 }
 
 .product{
 padding:0;
 overflow:hidden;
-text-align:left
+text-align:left;
 }
 
-.pic{
-height:180px;
-background:linear-gradient(135deg,#dfe7dc,#faf8f3);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:75px
+.product img{
+width:100%;
+height:260px;
+object-fit:cover;
+display:block;
 }
 
 .info{
-padding:20px
+padding:20px;
+}
+
+.aliexpress{
+display:inline-block;
+background:#ff4747;
+color:white;
+padding:7px 12px;
+border-radius:20px;
+font-size:13px;
+font-weight:bold;
+margin-bottom:10px;
 }
 
 .shop{
 display:inline-block;
+margin-top:10px;
 background:#6b4658;
 color:white;
-padding:10px 17px;
-border-radius:20px;
+padding:11px 18px;
+border-radius:22px;
 font-weight:bold;
-text-decoration:none
+text-decoration:none;
 }
 
 .about{
 background:#fffdf9;
 border-radius:25px;
 padding:30px;
-border:1px solid #e3ddd3
+border:1px solid #e3ddd3;
 }
 
 footer{
@@ -186,21 +196,21 @@ background:#302b2d;
 color:#f4eee5;
 text-align:center;
 padding:35px 20px;
-border-top:4px solid #b99b68
+border-top:4px solid #b99b68;
 }
 
 @media(max-width:700px){
 nav{
 flex-direction:column;
-gap:10px
+gap:10px;
 }
 
 nav a{
-margin:0 7px
+margin:0 7px;
 }
 
 .hero h1{
-font-size:40px
+font-size:40px;
 }
 }
 </style>
@@ -218,6 +228,7 @@ font-size:40px
 <a href="#about">About</a>
 </div>
 </nav>
+
 
 <header class="hero" id="home">
 
@@ -290,30 +301,69 @@ Explore our favorite ladies' finds.
 <h2>Featured Finds</h2>
 
 <p class="subtitle">
-Our favorite products and shopping inspiration.
+Shop our latest AliExpress finds.
 </p>
 
 <div class="grid">
 
 
+<!-- PRODUCT 1 -->
+
 <div class="card product">
 
-<div class="pic">💎</div>
+<img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb976b2b21765453a9e9582dc79ab120aZ.jpg"
+alt="European Rhinestone Pearl Bow Heart Stud Earrings">
 
 <div class="info">
 
-<h3>Elegant Pearl Bow Earrings</h3>
+<span class="aliexpress">🛍️ AliExpress</span>
+
+<h3>
+European Rhinestone Pearl Bow Heart Stud Earrings
+</h3>
 
 <p>
-Beautiful pearl bow heart earrings for women.
-Perfect for everyday style and special occasions.
+10 Pairs Set • Minimalist • Elegant Jewelry for Women
+</p>
+
+<p>
+<b>Price Now: PKR 1,114.78</b>
 </p>
 
 <a class="shop"
 href="https://s.click.aliexpress.com/e/_c3FeKU5Z"
 target="_blank"
 rel="nofollow sponsored">
-Shop on AliExpress →
+Shop Now → 
+</a>
+
+</div>
+</div>
+
+
+<!-- MORE PRODUCTS CAN BE ADDED HERE -->
+
+<div class="card product">
+
+<div style="height:260px;background:#eef1eb;display:flex;align-items:center;justify-content:center;font-size:80px;">
+💍
+</div>
+
+<div class="info">
+
+<span class="aliexpress">🛍️ AliExpress</span>
+
+<h3>Elegant Jewelry Collection</h3>
+
+<p>
+Beautiful accessories and jewelry for women.
+</p>
+
+<a class="shop"
+href="https://s.click.aliexpress.com/e/_c3FeKU5Z"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
 </a>
 
 </div>
@@ -322,78 +372,25 @@ Shop on AliExpress →
 
 <div class="card product">
 
-<div class="pic">👜</div>
+<div style="height:260px;background:#eef1eb;display:flex;align-items:center;justify-content:center;font-size:80px;">
+💄
+</div>
 
 <div class="info">
 
-<h3>Trendy Handbag</h3>
+<span class="aliexpress">🛍️ AliExpress</span>
+
+<h3>Beauty Finds</h3>
 
 <p>
-Chic everyday style with a feminine touch.
+Affordable beauty products worth checking out.
 </p>
 
-<a class="shop" href="#about">
-Coming Soon →
-</a>
-
-</div>
-</div>
-
-
-<div class="card product">
-
-<div class="pic">💄</div>
-
-<div class="info">
-
-<h3>Beauty Pick</h3>
-
-<p>
-Affordable beauty finds worth checking out.
-</p>
-
-<a class="shop" href="#about">
-Coming Soon →
-</a>
-
-</div>
-</div>
-
-
-<div class="card product">
-
-<div class="pic">👠</div>
-
-<div class="info">
-
-<h3>Chic Shoes</h3>
-
-<p>
-Elegant footwear to finish your look.
-</p>
-
-<a class="shop" href="#about">
-Coming Soon →
-</a>
-
-</div>
-</div>
-
-
-<div class="card product">
-
-<div class="pic">🎁</div>
-
-<div class="info">
-
-<h3>Gift Favorite</h3>
-
-<p>
-Pretty gift ideas for someone special.
-</p>
-
-<a class="shop" href="#about">
-Coming Soon →
+<a class="shop"
+href="https://s.click.aliexpress.com/e/_c3FeKU5Z"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
 </a>
 
 </div>
@@ -418,8 +415,8 @@ accessories and gift ideas that are stylish and budget-friendly.
 <p>
 <b>Affiliate disclosure:</b>
 Some links on this website may be affiliate links.
-If you purchase through an affiliate link,
-we may earn a commission at no extra cost to you.
+If you purchase through an affiliate link, we may earn
+a commission at no extra cost to you.
 </p>
 
 </div>
