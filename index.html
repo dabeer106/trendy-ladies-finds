@@ -3,33 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trendy Ladies Finds ✨ | Premium Jewelry & Accessories</title>
-<meta name="description" content="Cute, stylish and affordable jewelry, beauty and accessories for women.">
+<title>Trendy Ladies Finds ✨ | Premium Women's Accessories & Jewelry Edit</title>
+<meta name="description" content="Handpicked elegant jewelry, chic accessories, beauty & luxury lifestyle products for women.">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary: #1e1117;
-  --accent: #c59b27;
+  --primary: #2d1820;
+  --accent: #d4a373;
   --accent-hover: #bc8a5f;
   --rose-gold: #e8b4b8;
-  --bg: #faf7f5;
+  --bg: #fdfbf7;
   --card-bg: #ffffff;
-  --text-main: #1f1d1d;
-  --text-muted: #6b6366;
-  --border-color: #eee4dc;
-  --radius-lg: 20px;
-  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
-  --shadow-lg: 0 15px 35px rgba(0,0,0,0.1);
+  --ink: #1a1518;
+  --muted: #6e6569;
+  --line: #f0e6df;
+  --shadow-sm: 0 4px 15px rgba(45,24,32,0.04);
+  --shadow-lg: 0 15px 35px rgba(45,24,32,0.08);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { 
   font-family: 'Plus Jakarta Sans', sans-serif; 
-  background-color: var(--bg); 
-  color: var(--text-main); 
+  background: var(--bg); 
+  color: var(--ink); 
   line-height: 1.6;
 }
 
@@ -38,7 +37,7 @@ button, input { font: inherit; }
 
 /* Announcement Bar */
 .top-bar {
-  background: linear-gradient(90deg, #1e1117, #4a2734);
+  background: linear-gradient(90deg, #2d1820, #4a2734);
   color: #fff;
   text-align: center;
   padding: 10px 15px;
@@ -48,14 +47,14 @@ button, input { font: inherit; }
 }
 .top-bar span { color: var(--rose-gold); }
 
-/* Navigation */
+/* Header & Navigation */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(253, 251, 247, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--line);
 }
 .nav-container {
   max-width: 1280px;
@@ -65,7 +64,13 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo-brand { display: flex; align-items: center; gap: 12px; }
+
+/* Brand Logo Styling */
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .logo-icon {
   width: 42px;
   height: 42px;
@@ -76,32 +81,56 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  box-shadow: 0 4px 12px rgba(45,24,32,0.15);
 }
 .logo-text {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--primary);
+  letter-spacing: -0.3px;
 }
 .logo-text span { color: var(--accent); font-style: italic; }
 
-.nav-links { display: flex; gap: 32px; list-style: none; }
-.nav-links a { font-size: 14px; font-weight: 600; transition: color 0.2s; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.2s;
+}
 .nav-links a:hover { color: var(--accent); }
 
-.nav-actions { display: flex; gap: 12px; }
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
 .icon-btn {
-  width: 42px; height: 42px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--line);
   background: #fff;
   color: var(--primary);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
 }
-.icon-btn:hover { background: var(--primary); color: #fff; }
+.icon-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
 
-/* Hero */
+.menu-toggle { display: none; }
+
+/* Hero Section */
 .hero {
   max-width: 1280px;
   margin: 24px auto 0;
@@ -110,52 +139,105 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  min-height: 560px;
 }
 .hero-card {
-  background: linear-gradient(135deg, #f7ede2 0%, #faf7f5 100%);
+  background: linear-gradient(135deg, #f7ede2 0%, #fdfbf7 100%);
   border-radius: 28px;
   padding: 60px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--line);
 }
 .eyebrow {
   display: inline-block;
-  font-size: 12px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px; line-height: 1.15;
-  color: var(--primary); margin-bottom: 20px;
+  font-size: 52px;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 20px;
 }
-.hero p { font-size: 16px; color: var(--text-muted); margin-bottom: 32px; }
+.hero p {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 32px;
+  max-width: 480px;
+}
 .btn-primary {
-  display: inline-flex; align-items: center; gap: 10px;
-  background: var(--primary); color: #fff;
-  padding: 14px 28px; border-radius: 50px;
-  font-weight: 600; transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(45,24,32,0.15);
 }
-.btn-primary:hover { background: var(--accent); transform: translateY(-2px); }
+.btn-primary:hover {
+  background: #42232e;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(45,24,32,0.2);
+}
 
 .hero-img-wrap {
   position: relative;
-  height: 480px;
+  height: 520px;
   border-radius: 28px;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
-.hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-tag {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 16px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow-lg);
+}
+.hero-tag strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--primary);
+}
+.hero-tag span { font-size: 13px; color: var(--muted); }
 
-/* Section Container */
+/* Main Section Layout */
 .section-container {
   max-width: 1280px;
   margin: 80px auto;
   padding: 0 24px;
 }
-.section-header { text-align: center; margin-bottom: 40px; }
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 .section-header h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 38px; color: var(--primary); margin-top: 8px;
+  font-size: 38px;
+  color: var(--primary);
+  margin-top: 8px;
+}
+.section-header p {
+  color: var(--muted);
+  font-size: 15px;
 }
 
 /* Category Grid */
@@ -166,132 +248,343 @@ header {
 }
 .cat-card {
   background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
   padding: 32px 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
 }
 .cat-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   border-color: var(--accent);
-  box-shadow: 0 15px 35px rgba(197, 155, 39, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 .cat-icon {
-  width: 60px; height: 60px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 16px;
   border-radius: 50%;
   background: #fdf6f0;
   color: var(--accent);
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 24px;
 }
+.cat-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.cat-card p { font-size: 13px; color: var(--muted); }
 
-/* Toolbar & Filters */
+/* Products Section Toolbar */
 .toolbar {
-  display: flex; justify-content: space-between; align-items: center;
-  gap: 20px; flex-wrap: wrap; margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
 }
-.search-box { flex: 1; min-width: 260px; position: relative; }
-.search-box i { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+.search-box {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+}
+.search-box i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
 .search-box input {
-  width: 100%; padding: 12px 20px 12px 48px;
-  border-radius: 30px; border: 1px solid var(--border-color); outline: none;
+  width: 100%;
+  padding: 12px 20px 12px 48px;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s;
 }
-.filters-group { display: flex; gap: 8px; flex-wrap: wrap; }
-.filter-btn {
-  padding: 10px 20px; border-radius: 30px;
-  border: 1px solid var(--border-color);
-  background: #fff; color: var(--primary);
-  font-weight: 600; font-size: 13px; cursor: pointer; transition: all 0.2s;
-}
-.filter-btn.active, .filter-btn:hover { background: var(--primary); color: #fff; }
+.search-box input:focus { border-color: var(--accent); }
 
-/* Products Grid */
+.filters-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn.active, .filter-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* Product Grid Cards */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 .product-card {
   background: var(--card-bg);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  border: 1px solid var(--line);
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
-.product-thumb { position: relative; height: 260px; overflow: hidden; background: #f8f1eb; }
-.product-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-.product-card:hover .product-thumb img { transform: scale(1.08); }
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.product-thumb {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background: #f8f1eb;
+}
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-thumb img { transform: scale(1.05); }
 
 .badge-tag {
-  position: absolute; top: 12px; left: 12px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
   background: rgba(255, 255, 255, 0.9);
-  color: var(--primary); font-size: 10px; font-weight: 700;
-  padding: 6px 12px; border-radius: 20px;
+  backdrop-filter: blur(4px);
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
 }
 .btn-wish {
-  position: absolute; top: 12px; right: 12px;
-  width: 36px; height: 36px; border-radius: 50%;
-  background: rgba(255,255,255,0.9); border: none;
-  cursor: pointer; color: var(--primary);
-  display: flex; align-items: center; justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s;
 }
 .btn-wish.active { background: var(--primary); color: #fff; }
 
-.product-body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
-.product-brand { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: 6px; }
-.product-title { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--primary); margin-bottom: 8px; }
-.product-desc { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; flex: 1; }
-.product-footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-color); padding-top: 12px; }
-
+.product-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.product-brand {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.product-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.product-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.price-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+}
 .btn-shop {
-  background: var(--primary); color: #fff; border: none;
-  padding: 8px 16px; border-radius: 20px; font-size: 12px;
-  font-weight: 600; cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 .btn-shop:hover { background: var(--accent); }
 
-.no-results { grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted); display: none; }
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+  display: none;
+}
+
+/* Call to Action Banner */
+.cta-banner {
+  background: linear-gradient(135deg, var(--primary), #42232e);
+  color: #fff;
+  border-radius: 28px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 60px;
+}
+.cta-banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.cta-banner p { color: var(--rose-gold); }
+.cta-banner .btn-light {
+  background: #fff;
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.cta-banner .btn-light:hover { background: var(--rose-gold); }
+
+/* About / Info Cards */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.about-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 40px;
+}
+.about-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--primary);
+  margin: 10px 0 16px;
+}
+.about-card p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
 
 /* Modal Box */
 .modal-overlay {
-  position: fixed; inset: 0; background: rgba(26,21,24,0.7);
-  backdrop-filter: blur(4px); z-index: 2000; display: none;
-  align-items: center; justify-content: center; padding: 20px;
+  position: fixed;
+  inset: 0;
+  background: rgba(26,21,24,0.7);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 .modal-content {
-  width: min(760px, 100%); background: #fff;
-  border-radius: 24px; overflow: hidden; display: grid;
-  grid-template-columns: 1fr 1fr; position: relative;
+  width: min(760px, 100%);
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  box-shadow: var(--shadow-lg);
 }
-.modal-content img { width: 100%; height: 100%; object-fit: cover; min-height: 350px; }
+.modal-content img { width: 100%; height: 100%; object-fit: cover; min-height: 380px; }
 .modal-close {
-  position: absolute; top: 16px; right: 16px;
-  width: 36px; height: 36px; border-radius: 50%;
-  border: none; background: #fff; cursor: pointer; font-size: 20px; z-index: 10;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 .modal-info { padding: 40px 32px; }
 
 /* Footer */
 footer {
-  background: var(--primary); color: #fff;
-  padding: 60px 24px 30px; margin-top: 80px; text-align: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 60px 24px 30px;
+  margin-top: 80px;
   border-top: 4px solid var(--accent);
 }
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.footer-logo span { color: var(--accent); }
+.footer-text { color: var(--rose-gold); font-size: 14px; margin-bottom: 24px; }
+.footer-copy { color: rgba(255,255,255,0.5); font-size: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 1024px) {
-  .hero { grid-template-columns: 1fr; }
-  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-card { padding: 40px; }
+  .products-grid, .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 650px) {
-  .categories-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
+  .menu-toggle { display: flex; }
+  .products-grid, .categories-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+  .cta-banner { flex-direction: column; text-align: center; }
   .modal-content { grid-template-columns: 1fr; }
   .modal-content img { height: 250px; min-height: unset; }
 }
@@ -309,14 +602,18 @@ footer {
       <div class="logo-icon"><i class="fa-solid fa-gem"></i></div>
       <div class="logo-text">Trendy Ladies <span>Finds</span></div>
     </a>
-    <ul class="nav-links">
+    
+    <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#categories">Categories</a></li>
       <li><a href="#jewelry">Collection</a></li>
+      <li><a href="#about">About</a></li>
     </ul>
+
     <div class="nav-actions">
-      <button class="icon-btn" id="goSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <button class="icon-btn" id="goWish"><i class="fa-regular fa-heart"></i></button>
+      <button class="icon-btn" id="goSearch" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" id="goWish" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <button class="icon-btn menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
 </header>
@@ -325,22 +622,28 @@ footer {
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-card">
-      <span class="eyebrow">Curated for Her • Premium Edit</span>
+      <span class="eyebrow">Curated for Her • 2026 Edit</span>
       <h1>Little Details.<br>Big Style.</h1>
       <p>Discover beautiful jewelry and stylish accessories selected for women who love cute, elegant and affordable finds.</p>
       <a href="#jewelry" class="btn-primary">Shop Collection <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class="hero-img-wrap">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Jewelry Edit">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Elegant women jewelry">
+      <div class="hero-tag">
+        <strong>Jewelry Edit</strong>
+        <span>Fresh finds worth discovering</span>
+      </div>
     </div>
   </section>
 
-  <!-- Categories -->
+  <!-- Categories Section -->
   <section class="section-container" id="categories">
     <div class="section-header">
       <span class="eyebrow">EXPLORE</span>
       <h2>Shop by Category</h2>
+      <p>Find your favorite style in just a click.</p>
     </div>
+    
     <div class="categories-grid">
       <div class="cat-card" data-filter="Jewelry">
         <div class="cat-icon"><i class="fa-solid fa-gem"></i></div>
@@ -370,6 +673,7 @@ footer {
     <div class="section-header">
       <span class="eyebrow">FEATURED COLLECTION</span>
       <h2>Jewelry & Accessories</h2>
+      <p>Hand-picked finds with direct links to AliExpress.</p>
     </div>
 
     <div class="toolbar">
@@ -381,13 +685,11 @@ footer {
         <button class="filter-btn active" data-filter="All">All</button>
         <button class="filter-btn" data-filter="Jewelry">Jewelry</button>
         <button class="filter-btn" data-filter="Accessories">Accessories</button>
-        <button class="filter-btn" data-filter="Beauty">Beauty</button>
         <button class="filter-btn" data-filter="Gifts">Gifts</button>
       </div>
     </div>
 
     <div class="products-grid" id="productsGrid">
-      <!-- JEWELRY PRODUCTS -->
       <article class="product-card" data-cat="Jewelry" data-name="Elegant Pearl Bow Earrings">
         <div class="product-thumb">
           <span class="badge-tag">FEATURED</span>
@@ -397,9 +699,9 @@ footer {
         <div class="product-body">
           <span class="product-brand">AliExpress • Jewelry</span>
           <h3 class="product-title">Elegant Pearl Bow Earrings</h3>
-          <p class="product-desc">Feminine pearl-inspired earrings with romantic bow detail.</p>
+          <p class="product-desc">Feminine pearl-inspired earrings with a romantic bow detail.</p>
           <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
+            <span class="price-label">View Price</span>
             <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
@@ -417,7 +719,7 @@ footer {
           <h3 class="product-title">Elegant Women's Jewelry</h3>
           <p class="product-desc">A stylish jewelry pick for everyday outfits and special occasions.</p>
           <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
+            <span class="price-label">View Price</span>
             <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
@@ -428,21 +730,20 @@ footer {
         <div class="product-thumb">
           <span class="badge-tag">TRENDING</span>
           <button class="btn-wish"><i class="fa-regular fa-heart"></i></button>
-          <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Statement Ring">
+          <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Statement Pearl Ring">
         </div>
         <div class="product-body">
           <span class="product-brand">AliExpress • Jewelry</span>
           <h3 class="product-title">Statement Pearl Ring</h3>
           <p class="product-desc">A bold pearl-style ring with an elegant golden finish.</p>
           <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
+            <span class="price-label">View Price</span>
             <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
         <a hidden class="link" href="https://s.click.aliexpress.com/e/_c4KcTWHt"></a>
       </article>
 
-      <!-- ACCESSORIES PRODUCTS -->
       <article class="product-card" data-cat="Accessories" data-name="Chic Women's Accessory">
         <div class="product-thumb">
           <span class="badge-tag">STYLE PICK</span>
@@ -454,33 +755,13 @@ footer {
           <h3 class="product-title">Chic Women's Accessory</h3>
           <p class="product-desc">A versatile accessory selected for a polished feminine look.</p>
           <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
+            <span class="price-label">View Price</span>
             <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
         <a hidden class="link" href="https://s.click.aliexpress.com/e/_c37Rzwuf"></a>
       </article>
 
-      <!-- BEAUTY PRODUCTS -->
-      <article class="product-card" data-cat="Beauty" data-name="Luxe Lip Care & Gloss Kit">
-        <div class="product-thumb">
-          <span class="badge-tag">MUST HAVE</span>
-          <button class="btn-wish"><i class="fa-regular fa-heart"></i></button>
-          <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8b6576c8033343bf9174577ee70250c3s.jpg" alt="Beauty Kit">
-        </div>
-        <div class="product-body">
-          <span class="product-brand">AliExpress • Beauty</span>
-          <h3 class="product-title">Luxe Lip Care & Gloss Kit</h3>
-          <p class="product-desc">Hydrating lip essential kit for everyday glow and soft lips.</p>
-          <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
-            <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-        </div>
-        <a hidden class="link" href="https://s.click.aliexpress.com/e/_c2Q6XHmN"></a>
-      </article>
-
-      <!-- GIFTS PRODUCTS -->
       <article class="product-card" data-cat="Gifts" data-name="Pretty Gift Jewelry Pick">
         <div class="product-thumb">
           <span class="badge-tag">GIFT IDEA</span>
@@ -492,25 +773,69 @@ footer {
           <h3 class="product-title">Pretty Gift Jewelry Pick</h3>
           <p class="product-desc">A lovely accessory idea for birthdays, celebrations and gifting.</p>
           <div class="product-footer">
-            <span style="font-size:12px; font-weight:700;">View Details</span>
+            <span class="price-label">View Price</span>
             <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
         <a hidden class="link" href="https://s.click.aliexpress.com/e/_c3dcY51N"></a>
       </article>
 
+      <article class="product-card" data-cat="Jewelry" data-name="Elegant Jewelry Find">
+        <div class="product-thumb">
+          <span class="badge-tag">NEW FIND</span>
+          <button class="btn-wish"><i class="fa-regular fa-heart"></i></button>
+          <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8b6576c8033343bf9174577ee70250c3s.jpg" alt="Jewelry Find">
+        </div>
+        <div class="product-body">
+          <span class="product-brand">AliExpress • Jewelry</span>
+          <h3 class="product-title">Elegant Jewelry Find</h3>
+          <p class="product-desc">A stylish and feminine jewelry pick for everyday outfits.</p>
+          <div class="product-footer">
+            <span class="price-label">View Price</span>
+            <button class="btn-shop view-btn">View Find <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <a hidden class="link" href="https://s.click.aliexpress.com/e/_c2Q6XHmN"></a>
+      </article>
+      
       <div class="no-results" id="noResults">No products found. Try another search keyword.</div>
+    </div>
+
+    <div class="cta-banner">
+      <div>
+        <h2>Find something beautiful today ✨</h2>
+        <p>New jewelry and ladies' finds added continuously to our aesthetic list.</p>
+      </div>
+      <a href="#jewelry" class="btn-light">Explore Full Collection</a>
+    </div>
+  </section>
+
+  <!-- About & Info -->
+  <section class="section-container" id="about">
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="eyebrow">OUR STORY</span>
+        <h2>Trendy Finds, Carefully Picked.</h2>
+        <p>Trendy Ladies Finds is a curated shopping inspiration site for women who love stylish, cute and budget-friendly products.</p>
+      </div>
+      <div class="about-card">
+        <span class="eyebrow">AFFILIATE DISCLOSURE</span>
+        <h2>Shop With Confidence</h2>
+        <p>Some links on this website are affiliate links. If you purchase through an affiliate link, we may earn a commission at no extra cost to you.</p>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <h3>Trendy Ladies Finds ✨</h3>
-  <p style="margin: 10px 0; color:var(--rose-gold);">Jewelry • Accessories • Beauty • Gift Ideas</p>
-  <p style="font-size: 12px; opacity: 0.6;">&copy; Trendy Ladies Finds. All rights reserved.</p>
+  <div class="footer-container">
+    <div class="footer-logo">Trendy Ladies <span>Finds ✨</span></div>
+    <div class="footer-text">Jewelry • Accessories • Beauty • Gift Ideas</div>
+    <div class="footer-copy">&copy; 2026 Trendy Ladies Finds. All rights reserved.</div>
+  </div>
 </footer>
 
-<!-- Modal Popup Box -->
+<!-- Modal -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content">
     <button class="modal-close" id="modalClose">&times;</button>
@@ -518,128 +843,112 @@ footer {
     <div class="modal-info">
       <span class="product-brand" id="mBrand"></span>
       <h2 id="mTitle" style="font-family:'Playfair Display',serif; color:var(--primary); margin: 10px 0;"></h2>
-      <p id="mDesc" style="color:var(--text-muted); font-size:14px; margin-bottom:24px;"></p>
+      <p id="mDesc" style="color:var(--muted); font-size:14px; margin-bottom:24px;"></p>
       <a href="" id="mLink" target="_blank" rel="nofollow sponsored" class="btn-primary">Shop on AliExpress <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const productCards = document.querySelectorAll('.product-card');
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const searchInput = document.getElementById('searchInput');
-  const noResults = document.getElementById('noResults');
-  let currentFilter = 'All';
+// JavaScript Logic
+const productCards = document.querySelectorAll('.product-card');
+const filterBtns = document.querySelectorAll('.filter-btn');
+const searchInput = document.getElementById('searchInput');
+const noResults = document.getElementById('noResults');
+let currentFilter = 'All';
 
-  // Category and Search Filter Function
-  function filterProducts() {
-    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
-    let visibleCount = 0;
+function filterProducts() {
+  const query = searchInput.value.toLowerCase().trim();
+  let count = 0;
+  
+  productCards.forEach(card => {
+    const cat = card.getAttribute('data-cat');
+    const name = card.getAttribute('data-name').toLowerCase();
+    const matchCat = (currentFilter === 'All' || cat === currentFilter);
+    const matchSearch = name.includes(query);
 
-    productCards.forEach(card => {
-      const cat = card.getAttribute('data-cat');
-      const name = card.getAttribute('data-name').toLowerCase();
-      const matchCat = (currentFilter === 'All' || cat === currentFilter);
-      const matchSearch = name.includes(query);
-
-      if (matchCat && matchSearch) {
-        card.style.display = 'flex';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
-      }
-    });
-
-    if (noResults) {
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    if (matchCat && matchSearch) {
+      card.style.display = 'flex';
+      count++;
+    } else {
+      card.style.display = 'none';
     }
-  }
-
-  // Filter Buttons Click
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFilter = btn.getAttribute('data-filter');
-      filterProducts();
-    });
   });
 
-  // Top Category Cards Click
-  document.querySelectorAll('.cat-card').forEach(card => {
-    card.addEventListener('click', () => {
-      currentFilter = card.getAttribute('data-filter');
-      filterBtns.forEach(b => {
-        b.classList.toggle('active', b.getAttribute('data-filter') === currentFilter);
-      });
-      filterProducts();
-      document.getElementById('jewelry').scrollIntoView({ behavior: 'smooth' });
-    });
+  noResults.style.display = count === 0 ? 'block' : 'none';
+}
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.getAttribute('data-filter');
+    filterProducts();
   });
-
-  if (searchInput) {
-    searchInput.addEventListener('input', filterProducts);
-  }
-
-  // Search Icon Focus
-  const goSearch = document.getElementById('goSearch');
-  if (goSearch) {
-    goSearch.addEventListener('click', () => {
-      document.getElementById('jewelry').scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => searchInput.focus(), 400);
-    });
-  }
-
-  // Wishlist Toggle
-  document.querySelectorAll('.btn-wish').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      btn.classList.toggle('active');
-      const icon = btn.querySelector('i');
-      if (btn.classList.contains('active')) {
-        icon.className = 'fa-solid fa-heart';
-      } else {
-        icon.className = 'fa-regular fa-heart';
-      }
-    });
-  });
-
-  // Modal Open Logic
-  const modalOverlay = document.getElementById('modalOverlay');
-  const mImg = document.getElementById('mImg');
-  const mTitle = document.getElementById('mTitle');
-  const mDesc = document.getElementById('mDesc');
-  const mBrand = document.getElementById('mBrand');
-  const mLink = document.getElementById('mLink');
-
-  document.querySelectorAll('.view-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const card = btn.closest('.product-card');
-      mImg.src = card.querySelector('img').src;
-      mTitle.textContent = card.querySelector('.product-title').textContent;
-      mDesc.textContent = card.querySelector('.product-desc').textContent;
-      mBrand.textContent = card.querySelector('.product-brand').textContent;
-      mLink.href = card.querySelector('.link').href;
-      
-      modalOverlay.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    });
-  });
-
-  function closeModal() {
-    modalOverlay.style.display = 'none';
-    document.body.style.overflow = '';
-  }
-
-  const modalClose = document.getElementById('modalClose');
-  if (modalClose) modalClose.addEventListener('click', closeModal);
-  if (modalOverlay) {
-    modalOverlay.addEventListener('click', (e) => { 
-      if (e.target === modalOverlay) closeModal(); 
-    });
-  }
 });
+
+document.querySelectorAll('.cat-card').forEach(card => {
+  card.addEventListener('click', () => {
+    currentFilter = card.getAttribute('data-filter');
+    filterBtns.forEach(b => {
+      b.classList.toggle('active', b.getAttribute('data-filter') === currentFilter);
+    });
+    filterProducts();
+    document.getElementById('jewelry').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+searchInput.addEventListener('input', filterProducts);
+
+// Search Focus Button
+document.getElementById('goSearch').addEventListener('click', () => {
+  document.getElementById('jewelry').scrollIntoView({ behavior: 'smooth' });
+  setTimeout(() => searchInput.focus(), 400);
+});
+
+// Wishlist toggle
+document.querySelectorAll('.btn-wish').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    btn.classList.toggle('active');
+    const icon = btn.querySelector('i');
+    if (btn.classList.contains('active')) {
+      icon.className = 'fa-solid fa-heart';
+    } else {
+      icon.className = 'fa-regular fa-heart';
+    }
+  });
+});
+
+// Modal Logic
+const modalOverlay = document.getElementById('modalOverlay');
+const mImg = document.getElementById('mImg');
+const mTitle = document.getElementById('mTitle');
+const mDesc = document.getElementById('mDesc');
+const mBrand = document.getElementById('mBrand');
+const mLink = document.getElementById('mLink');
+
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.product-card');
+    mImg.src = card.querySelector('img').src;
+    mTitle.textContent = card.querySelector('.product-title').textContent;
+    mDesc.textContent = card.querySelector('.product-desc').textContent;
+    mBrand.textContent = card.querySelector('.product-brand').textContent;
+    mLink.href = card.querySelector('.link').href;
+    
+    modalOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeModal() {
+  modalOverlay.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
 </script>
 
 </body>
