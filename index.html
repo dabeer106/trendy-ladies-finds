@@ -60,6 +60,7 @@ footer{background:var(--p);color:#eee3e6;text-align:center;padding:45px 20px;bor
     <a class="cat" href="accessories.html"><div class="emoji">👜</div><h3>Accessories</h3><p>Cute finishing touches.</p></a>
     <a class="cat" href="beauty.html"><div class="emoji">💄</div><h3>Beauty</h3><p>Pretty everyday essentials.</p></a>
     <a class="cat" href="gifts.html"><div class="emoji">🎁</div><h3>Gift Ideas</h3><p>Lovely picks for someone special.</p></a>
+    <a class="cat" href="perfumes.html"><div class="emoji">🌸</div><h3>Perfumes</h3><p>Lovely fragrances for every style.</p></a>
   </div>
 </section>
 
@@ -191,13 +192,13 @@ const products=[...document.querySelectorAll('.product')],filters=[...document.q
 let active='All';
 function render(){let q=search.value.toLowerCase().trim(),count=0;products.forEach(p=>{let ok=(active==='All'||p.dataset.cat===active)&&p.dataset.name.toLowerCase().includes(q);p.style.display=ok?'block':'none';if(ok)count++});no.style.display=count?'none':'block'}
 filters.forEach(b=>b.onclick=()=>{filters.forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.filter;render()});
-document.querySelectorAll('.cat').forEach(c=>c.onclick=()=>{active=c.dataset.filter;filters.forEach(x=>x.classList.toggle('active',x.dataset.filter===active));render();document.getElementById('jewelry').scrollIntoView({behavior:'smooth'})});
+document.querySelectorAll('.cat').forEach(c=>c.onclick=()=>{if(c.getAttribute('href')&&c.getAttribute('href')!=='#'){return;}active=c.dataset.filter||'All';filters.forEach(x=>x.classList.toggle('active',x.dataset.filter===active));render();document.getElementById('jewelry').scrollIntoView({behavior:'smooth'})});
 search.oninput=render;
 document.getElementById('goSearch').onclick=()=>{document.getElementById('jewelry').scrollIntoView({behavior:'smooth'});setTimeout(()=>search.focus(),400)};
 document.getElementById('menu').onclick=()=>document.getElementById('links').classList.toggle('show');
 document.querySelectorAll('.wish').forEach(b=>b.onclick=e=>{e.stopPropagation();b.classList.toggle('active');b.textContent=b.classList.contains('active')?'♥':'♡'});
 const bg=document.getElementById('modalBg'),mi=document.getElementById('mImg'),mt=document.getElementById('mTitle'),md=document.getElementById('mDesc'),mb=document.getElementById('mBrand'),ml=document.getElementById('mLink');
-document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{let p=b.closest('.product');mi.src=p.querySelector('img').src;mi.alt=p.querySelector('img').alt;mt.textContent=p.querySelector('h3').textContent;md.textContent=p.querySelector('p').textContent;mb.textContent=p.querySelector('.brand').textContent;ml.href=p.querySelector('.link').href;bg.style.display='flex';document.body.style.overflow='hidden'});
+document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{let p=b.closest('.product');mi.src=p.querySelector('img').src;mi.alt=p.querySelector('img').alt;mt.textContent=p.querySelector('h3').textContent;md.textContent=p.querySelector('p').textContent;mb.textContent=p.querySelector('.brand').textContent;ml.href=p.querySelector('.view').href;bg.style.display='flex';document.body.style.overflow='hidden'});
 function closeModal(){bg.style.display='none';document.body.style.overflow=''}document.getElementById('close').onclick=closeModal;bg.onclick=e=>{if(e.target===bg)closeModal()};document.onkeydown=e=>{if(e.key==='Escape')closeModal()};
 document.getElementById('goWish').onclick=()=>document.querySelector('.wish').scrollIntoView({behavior:'smooth',block:'center'});
 </script>
