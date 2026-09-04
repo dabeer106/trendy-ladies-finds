@@ -4,634 +4,464 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trendy Ladies Finds ✨ | Fashion, Beauty & Accessories</title>
+<title>Trendy Ladies Finds ✨</title>
 
-<meta name="description" content="Discover trendy ladies jewelry, accessories, beauty products and gift ideas at affordable prices.">
+<meta name="description"
+content="Discover trendy jewelry, accessories, beauty products, gifts and perfumes for women.">
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#fffaf7;
-  color:#35232b;
+font-family:Arial,sans-serif;
+background:#fff8f4;
+color:#4b2635;
 }
 
-a{
-  text-decoration:none;
-}
-
-.top{
-  background:#4b2635;
-  color:white;
-  text-align:center;
-  padding:10px;
-  font-size:14px;
-}
-
-nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:white;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+header{
+background:#4b2635;
+color:white;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
 }
 
 .logo{
-  font-family:Georgia,serif;
-  font-size:25px;
-  font-weight:bold;
-  color:#4b2635;
+font-size:24px;
+font-weight:bold;
 }
 
-.logo span{
-  color:#c89b3c;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:16px;
+font-size:14px;
 }
 
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:25px;
-}
-
-nav ul a{
-  color:#4b2635;
-  font-weight:bold;
-}
-
-nav ul a:hover{
-  color:#c08b2d;
+nav a:hover{
+color:#ffd6df;
 }
 
 .hero{
-  min-height:570px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  background:linear-gradient(135deg,#f8e8e8,#fff7ef);
-  padding:60px 7%;
-  gap:40px;
-}
-
-.hero-text small{
-  color:#a47722;
-  font-weight:bold;
-  letter-spacing:2px;
+padding:75px 20px;
+text-align:center;
+background:linear-gradient(135deg,#f8dfe5,#fff1e8);
 }
 
 .hero h1{
-  font-family:Georgia,serif;
-  font-size:58px;
-  color:#4b2635;
-  margin:18px 0;
+font-size:46px;
+margin-bottom:15px;
 }
 
 .hero p{
-  font-size:18px;
-  line-height:1.7;
-  color:#695b61;
-  max-width:560px;
+max-width:650px;
+margin:auto;
+font-size:17px;
+line-height:1.6;
+color:#633b49;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 25px;
-  background:#4b2635;
-  color:white;
-  border-radius:30px;
-  font-weight:bold;
+.hero-btn{
+display:inline-block;
+margin-top:25px;
+padding:13px 25px;
+background:#4b2635;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
 }
 
-.btn:hover{
-  background:#c08b2d;
+.container{
+max-width:1150px;
+margin:auto;
+padding:50px 20px;
 }
 
-.hero-img{
-  height:440px;
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 15px 40px rgba(75,38,53,.18);
-}
-
-.hero-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:70px 5%;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:40px;
-}
-
-.section-title h2{
-  font-family:Georgia,serif;
-  color:#4b2635;
-  font-size:40px;
-  margin-bottom:10px;
-}
-
-.section-title p{
-  color:#766970;
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:35px;
 }
 
 .categories{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
 }
 
 .category{
-  background:white;
-  padding:25px 10px;
-  text-align:center;
-  border-radius:18px;
-  border:1px solid #eadde1;
-  transition:.3s;
+background:white;
+padding:28px 15px;
+text-align:center;
+border-radius:20px;
+text-decoration:none;
+color:#4b2635;
+box-shadow:0 5px 20px #0001;
+transition:.3s;
 }
 
 .category:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+transform:translateY(-7px);
 }
 
-.category .icon{
-  font-size:35px;
-  margin-bottom:10px;
+.icon{
+font-size:45px;
+display:block;
+margin-bottom:12px;
 }
 
 .category h3{
-  color:#4b2635;
-  font-size:16px;
+font-size:19px;
+}
+
+.category p{
+font-size:13px;
+color:#777;
+margin-top:8px;
 }
 
 .products{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
 }
 
 .card{
-  background:white;
-  border-radius:20px;
-  overflow:hidden;
-  border:1px solid #eadde1;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
-  transition:.3s;
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 20px #0001;
+transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-7px);
-  box-shadow:0 15px 35px rgba(75,38,53,.14);
+transform:translateY(-6px);
 }
 
-.card-img{
-  height:240px;
-  position:relative;
-  background:#f5eeee;
-}
-
-.card-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-  background:#4b2635;
-  color:white;
-  padding:7px 11px;
-  border-radius:20px;
-  font-size:11px;
-  font-weight:bold;
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
 }
 
 .info{
-  padding:18px;
-}
-
-.info .store{
-  color:#c08b2d;
-  font-size:12px;
-  font-weight:bold;
+padding:18px;
 }
 
 .info h3{
-  color:#4b2635;
-  margin:9px 0;
-  font-size:18px;
+font-size:19px;
+margin-bottom:9px;
 }
 
 .info p{
-  color:#777;
-  font-size:14px;
-  line-height:1.5;
-}
-
-.price{
-  margin-top:12px;
-  font-weight:bold;
-  color:#4b2635;
+font-size:14px;
+line-height:1.5;
+color:#666;
+margin-bottom:15px;
 }
 
 .shop{
-  display:block;
-  margin-top:14px;
-  text-align:center;
-  background:#4b2635;
-  color:white;
-  padding:11px;
-  border-radius:25px;
-  font-weight:bold;
+display:inline-block;
+background:#4b2635;
+color:white;
+text-decoration:none;
+padding:11px 18px;
+border-radius:25px;
+font-weight:bold;
 }
 
 .shop:hover{
-  background:#c08b2d;
+background:#713d51;
 }
 
 .about{
-  background:#f7eeee;
-  max-width:none;
-  padding:70px 10%;
-}
-
-.about-inner{
-  max-width:1000px;
-  margin:auto;
-  text-align:center;
+background:#f8dfe5;
+text-align:center;
+padding:50px 20px;
 }
 
 .about h2{
-  font-family:Georgia,serif;
-  color:#4b2635;
-  font-size:38px;
-  margin-bottom:20px;
+font-size:30px;
+margin-bottom:15px;
 }
 
 .about p{
-  color:#665a60;
-  line-height:1.8;
-  font-size:16px;
-}
-
-.disclosure{
-  margin-top:25px;
-  font-size:13px !important;
-  color:#887b81 !important;
+max-width:700px;
+margin:auto;
+line-height:1.7;
+color:#633b49;
 }
 
 footer{
-  background:#4b2635;
-  color:white;
-  text-align:center;
-  padding:35px 20px;
-}
-
-footer h3{
-  font-family:Georgia,serif;
-  font-size:25px;
-  margin-bottom:10px;
+background:#4b2635;
+color:white;
+text-align:center;
+padding:28px 20px;
+margin-top:40px;
 }
 
 footer p{
-  color:#eadde1;
-  font-size:13px;
-  margin:7px;
+margin:6px 0;
+font-size:14px;
 }
 
-@media(max-width:900px){
-  .hero{
-    grid-template-columns:1fr;
-  }
+@media(max-width:700px){
 
-  .hero h1{
-    font-size:45px;
-  }
-
-  .products{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .categories{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  nav ul{
-    gap:12px;
-  }
+.hero h1{
+font-size:35px;
 }
 
-@media(max-width:600px){
-  nav{
-    padding:15px;
-    flex-direction:column;
-    gap:12px;
-  }
+nav{
+width:100%;
+text-align:center;
+}
 
-  nav ul{
-    font-size:13px;
-    gap:12px;
-  }
+nav a{
+display:inline-block;
+margin:5px;
+}
 
-  .hero{
-    padding:45px 20px;
-  }
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .hero-img{
-    height:350px;
-  }
-
-  .products{
-    grid-template-columns:1fr;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  section{
-    padding:50px 20px;
-  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="top">
-✨ Hand-picked ladies finds • Jewelry • Beauty • Accessories • Style ✨
+<header>
+
+<div class="logo">
+Trendy Ladies Finds ✨
 </div>
 
 <nav>
-  <a href="#" class="logo">Trendy Ladies <span>Finds ✨</span></a>
-
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#categories">Categories</a></li>
-    <li><a href="#products">Shop</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
+<a href="index.html">Home</a>
+<a href="jewelry.html">Jewelry</a>
+<a href="accessories.html">Accessories</a>
+<a href="beauty.html">Beauty</a>
+<a href="gifts.html">Gifts</a>
+<a href="perfumes.html">Perfumes</a>
 </nav>
 
-<section class="hero" id="home">
-
-  <div class="hero-text">
-    <small>✨ TRENDY FINDS FOR HER</small>
-
-    <h1>Find Your Next Favorite 💖</h1>
-
-    <p>
-      Discover beautiful jewelry, stylish accessories,
-      beauty essentials and lovely gift ideas selected
-      for women who love elegant and affordable finds.
-    </p>
-
-    <a href="#products" class="btn">Explore Finds →</a>
-  </div>
-
-  <div class="hero-img">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb976b2b21765453a9e9582dc79ab120aZ.jpg" alt="Trendy Ladies Jewelry">
-  </div>
-
-</section>
-
-<section id="categories">
-
-  <div class="section-title">
-    <h2>Shop By Category</h2>
-    <p>Find something beautiful for every style ✨</p>
-  </div>
-
-  <div class="categories">
-
-    <a href="#products" class="category">
-      <div class="icon">💎</div>
-      <h3>Jewelry</h3>
-    </a>
-
-    <a href="#products" class="category">
-      <div class="icon">👜</div>
-      <h3>Accessories</h3>
-    </a>
-
-    <a href="#products" class="category">
-      <div class="icon">💄</div>
-      <h3>Beauty</h3>
-    </a>
-
-    <a href="#products" class="category">
-      <div class="icon">🎁</div>
-      <h3>Gift Ideas</h3>
-    </a>
-
-    <a href="#products" class="category">
-      <div class="icon">🌸</div>
-      <h3>Perfumes</h3>
-    </a>
-
-  </div>
-
-</section>
-
-<section id="products">
-
-  <div class="section-title">
-    <h2>✨ Featured Finds</h2>
-    <p>Beautiful picks selected for you</p>
-  </div>
-
-  <div class="products">
-
-    <!-- PRODUCT 1 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">51% OFF</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb976b2b21765453a9e9582dc79ab120aZ.jpg" alt="Pearl Bow Earrings">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Elegant Pearl Bow Earrings</h3>
-        <p>Beautiful pearl bow earrings for an elegant everyday or special occasion look.</p>
-        <div class="price">PKR 1,114.78</div>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c3FeKU5Z" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
+</header>
 
 
-    <!-- PRODUCT 2 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">TRENDING</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S66d7c88077244bbbabb727b23e94d3f3v.jpg" alt="Elegant Women's Jewelry">
-      </div>
+<!-- HERO -->
 
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Elegant Women's Jewelry</h3>
-        <p>Chic jewelry designed to add a beautiful touch to your outfit.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c3WhpVvd" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
+<section class="hero">
 
+<h1>Trendy Ladies Finds ✨</h1>
 
-    <!-- PRODUCT 3 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">POPULAR</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Statement Pearl Ring">
-      </div>
+<p>
+Discover beautiful jewelry, stylish accessories, beauty products,
+lovely gifts and amazing perfumes — all in one place.
+</p>
 
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Statement Pearl Ring</h3>
-        <p>A stylish statement jewelry piece for women who love elegant details.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c4KcTWHt" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-
-    <!-- PRODUCT 4 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">NEW</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3257ee7985874605a481c8378d68c8caN.png" alt="Chic Women's Accessory">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Chic Women's Accessory</h3>
-        <p>A fashionable accessory that makes your everyday style more special.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c37Rzwuf" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-
-    <!-- PRODUCT 5 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">STYLE PICK</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa44aa9d97635450cad6e2a9b3f694c5eH.jpg" alt="Pretty Gift Jewelry">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Pretty Gift Jewelry Pick</h3>
-        <p>A lovely jewelry choice for gifting or treating yourself.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c3dcY51N" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-
-    <!-- PRODUCT 6 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">NEW</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8b6576c8033343bf9174577ee70250c3s.jpg" alt="Elegant Jewelry Find">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Elegant Jewelry Find</h3>
-        <p>A pretty and versatile jewelry find for stylish women.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c2Q6XHmN" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-
-    <!-- PRODUCT 7 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">TRENDING</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc107d6722dbe4a0bade736d0f915155a0.jpg" alt="Chic Jewelry Pick">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Chic Jewelry Pick</h3>
-        <p>A fashionable jewelry piece to complete your favorite look.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c4qy7PbP" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-
-    <!-- PRODUCT 8 -->
-    <div class="card">
-      <div class="card-img">
-        <span class="badge">BEST PICK</span>
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa7d03039b9154ca8af05616564e6faf8r.jpg" alt="Pretty Statement Jewelry">
-      </div>
-
-      <div class="info">
-        <span class="store">🛍️ AliExpress</span>
-        <h3>Pretty Statement Jewelry</h3>
-        <p>Make your outfit stand out with this beautiful statement piece.</p>
-        <a class="shop" href="https://s.click.aliexpress.com/e/_c3CdAj13" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-      </div>
-    </div>
-
-  </div>
+<a href="#categories" class="hero-btn">
+Explore Categories →
+</a>
 
 </section>
 
 
-<div class="about" id="about">
+<!-- CATEGORIES -->
 
-  <div class="about-inner">
+<section class="container" id="categories">
 
-    <h2>About Trendy Ladies Finds ✨</h2>
+<h2 class="title">
+✨ Shop By Category
+</h2>
 
-    <p>
-      Welcome to Trendy Ladies Finds — your place for discovering
-      cute, stylish and affordable products for women.
-      We share hand-picked jewelry, accessories, beauty products
-      and gift ideas from online stores.
-    </p>
+<div class="categories">
 
-    <p class="disclosure">
-      Affiliate Disclosure: Some links on this website are affiliate links.
-      If you purchase through them, we may earn a small commission at no
-      extra cost to you.
-    </p>
+<a class="category" href="jewelry.html">
+<span class="icon">💎</span>
+<h3>Jewelry</h3>
+<p>Elegant jewelry finds</p>
+</a>
 
-  </div>
+<a class="category" href="accessories.html">
+<span class="icon">👜</span>
+<h3>Accessories</h3>
+<p>Trendy fashion accessories</p>
+</a>
+
+<a class="category" href="beauty.html">
+<span class="icon">💄</span>
+<h3>Beauty</h3>
+<p>Beauty & makeup finds</p>
+</a>
+
+<a class="category" href="gifts.html">
+<span class="icon">🎁</span>
+<h3>Gift Ideas</h3>
+<p>Perfect gifts for her</p>
+</a>
+
+<a class="category" href="perfumes.html">
+<span class="icon">🌸</span>
+<h3>Perfumes</h3>
+<p>Beautiful fragrance finds</p>
+</a>
 
 </div>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+
+<section class="container">
+
+<h2 class="title">
+🌟 Featured Finds
+</h2>
+
+<div class="products">
+
+
+<div class="card">
+
+<img
+src="https://ae-pic-a1.aliexpress-media.com/kf/Sb976b2b21765453a9e9582dc79ab120aZ.jpg"
+alt="Pearl Bow Earrings">
+
+<div class="info">
+
+<h3>Elegant Pearl Bow Earrings ✨</h3>
+
+<p>
+Beautiful feminine earrings for everyday style and special occasions.
+</p>
+
+<a
+class="shop"
+href="https://s.click.aliexpress.com/e/_c3FeKU5Z"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
+</a>
+
+</div>
+</div>
+
+
+<div class="card">
+
+<img
+src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg"
+alt="Statement Pearl Ring">
+
+<div class="info">
+
+<h3>Statement Pearl Ring 💎</h3>
+
+<p>
+A stylish jewelry pick that adds an elegant touch to any outfit.
+</p>
+
+<a
+class="shop"
+href="https://s.click.aliexpress.com/e/_c4KcTWHt"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
+</a>
+
+</div>
+</div>
+
+
+<div class="card">
+
+<img
+src="https://ae-pic-a1.aliexpress-media.com/kf/S3257ee7985874605a481c8378d68c8caN.png"
+alt="Chic Women's Accessory">
+
+<div class="info">
+
+<h3>Chic Women's Accessory 🌸</h3>
+
+<p>
+Cute and trendy accessory for women who love stylish looks.
+</p>
+
+<a
+class="shop"
+href="https://s.click.aliexpress.com/e/_c37Rzwuf"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
+</a>
+
+</div>
+</div>
+
+
+<div class="card">
+
+<img
+src="https://ae-pic-a1.aliexpress-media.com/kf/S8b6576c8033343bf9174577ee70250c3s.jpg"
+alt="Elegant Jewelry Find">
+
+<div class="info">
+
+<h3>Elegant Jewelry Find 💖</h3>
+
+<p>
+A beautiful and affordable find for your jewelry collection.
+</p>
+
+<a
+class="shop"
+href="https://s.click.aliexpress.com/e/_c2Q6XHmN"
+target="_blank"
+rel="nofollow sponsored">
+Shop Now →
+</a>
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<h2>About Trendy Ladies Finds 💕</h2>
+
+<p>
+We discover cute, stylish and affordable products for women.
+From jewelry and accessories to beauty, gifts and perfumes,
+our goal is to help you find your next favorite product.
+</p>
+
+</section>
 
 
 <footer>
 
-  <h3>Trendy Ladies Finds ✨</h3>
+<p>✨ Trendy Ladies Finds</p>
 
-  <p>Fashion • Beauty • Jewelry • Accessories • Gift Ideas</p>
+<p>
+Fashion • Jewelry • Beauty • Accessories • Gifts • Perfumes
+</p>
 
-  <p>© 2026 Trendy Ladies Finds. All rights reserved.</p>
+<p>
+© 2026 Trendy Ladies Finds. All Rights Reserved.
+</p>
 
 </footer>
 
