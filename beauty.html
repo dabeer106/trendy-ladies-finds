@@ -1,96 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty Finds ✨ | Trendy Ladies Finds</title>
-
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#fff8f4;color:#4b2635}
-header{background:#4b2635;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:24px;font-weight:bold}
-nav a{color:white;text-decoration:none;margin-left:20px}
-.hero{text-align:center;padding:55px 20px;background:#f8dfe5}
-.hero h1{font-size:42px;margin-bottom:12px}
-.hero p{font-size:17px}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.title{text-align:center;margin-bottom:30px;font-size:30px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px}
-.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #0001}
-.card img{width:100%;height:240px;object-fit:cover}
-.info{padding:18px}
-.info h3{margin-bottom:10px}
-.info p{font-size:14px;line-height:1.5;color:#666;margin-bottom:15px}
-.shop{display:inline-block;background:#4b2635;color:white;text-decoration:none;padding:11px 18px;border-radius:25px}
-footer{text-align:center;background:#4b2635;color:white;padding:25px;margin-top:40px}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="logo">Trendy Ladies Finds ✨</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="jewelry.html">Jewelry</a>
-<a href="accessories.html">Accessories</a>
-<a href="beauty.html">Beauty</a>
-</nav>
-</header>
-
-<section class="hero">
-<h1>Beauty Finds 💄✨</h1>
-<p>Discover cute, stylish & affordable beauty products for women.</p>
-</section>
-
-<div class="container">
-<h2 class="title">✨ Beauty Picks</h2>
-
-<div class="products">
-
-<div class="card">
-<img src="https://ae-pic-a1.aliexpress-media.com/kf/S66d7c88077244bbbabb727b23e94d3f3v.jpg">
-<div class="info">
-<h3>Elegant Beauty Find</h3>
-<p>Discover a stylish beauty pick perfect for your everyday look.</p>
-<a class="shop" href="https://s.click.aliexpress.com/e/_c3WhpVvd" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://ae-pic-a1.aliexpress-media.com/kf/S8b6576c8033343bf9174577ee70250c3s.jpg">
-<div class="info">
-<h3>Chic Beauty Pick</h3>
-<p>A beautiful and trendy find to add a little extra glam to your style.</p>
-<a class="shop" href="https://s.click.aliexpress.com/e/_c2Q6XHmN" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc107d6722dbe4a0bade736d0f915155a0.jpg">
-<div class="info">
-<h3>Pretty Beauty Essential</h3>
-<p>Simple, stylish and perfect for women who love beautiful finds.</p>
-<a class="shop" href="https://s.click.aliexpress.com/e/_c4qy7PbP" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa7d03039b9154ca8af05616564e6faf8r.jpg">
-<div class="info">
-<h3>Glam Beauty Find</h3>
-<p>A lovely addition to your beauty collection and daily routine.</p>
-<a class="shop" href="https://s.click.aliexpress.com/e/_c3CdAj13" target="_blank" rel="nofollow sponsored">Shop Now →</a>
-</div>
-</div>
-
-</div>
-</div>
-
-<footer>
-© 2026 Trendy Ladies Finds ✨ | Fashion • Beauty • Accessories
-</footer>
-
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Beauty • Trendy Ladies Finds ✨</title><meta name="description" content="Pretty beauty and self-care inspiration for a fresh, feminine everyday routine."><style>
+:root{--wine:#641d3a;--rose:#a85f73;--gold:#b8904e;--cream:#fbf6f0;--ink:#2b2025;--muted:#766a70;--line:#eaded7;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--ink)}
+a{text-decoration:none;color:inherit}button,input{font:inherit}.top{background:var(--wine);color:#fff;text-align:center;padding:9px 15px;font-size:12px;letter-spacing:.5px}
+nav{position:sticky;top:0;z-index:50;background:#fffdfbf2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 5%;display:flex;align-items:center;gap:22px}
+.logo{font:700 24px Georgia,serif;color:var(--wine);white-space:nowrap}.logo span{color:var(--gold)}
+.links{margin-left:auto;display:flex;gap:20px;align-items:center}.links a{font-size:14px;font-weight:700;color:#51474c}.links a:hover{color:var(--rose)}
+.menu{display:none;border:1px solid var(--line);background:#fff;border-radius:50%;width:40px;height:40px}
+.hero{max-width:1200px;margin:26px auto 0;border-radius:30px;overflow:hidden;min-height:570px;display:grid;grid-template-columns:1fr 1fr;background:linear-gradient(120deg,#f0dfdf,#fbf6f0)}
+.heroText{padding:70px 8%;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--rose);font-weight:800;margin-bottom:14px}
+h1{font:normal 58px/1.05 Georgia,serif;color:var(--wine);margin:0 0 18px}.heroText p{color:var(--muted);font-size:17px;line-height:1.75;max-width:500px}
+.cta{display:inline-block;width:max-content;background:var(--wine);color:#fff;padding:13px 22px;border-radius:28px;font-weight:700;margin-top:14px;box-shadow:0 10px 25px #641d3a25}.cta:hover{background:#7a294b}
+.heroImg{min-height:570px;position:relative}.heroImg img{width:100%;height:100%;object-fit:cover;display:block}.heroTag{position:absolute;left:22px;bottom:22px;background:#fffefdf2;padding:14px 17px;border-radius:16px;box-shadow:0 12px 35px #641d3a20}.heroTag b{display:block;font:700 18px Georgia,serif;color:var(--wine)}
+section{max-width:1200px;margin:auto;padding:70px 5%}.head{text-align:center;margin-bottom:30px}.head h2{font:normal 40px Georgia,serif;color:var(--wine);margin:0 0 8px}.head p{color:var(--muted)}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px;text-align:center;box-shadow:0 8px 25px #641d3a0b;transition:.25s}.cat:hover{transform:translateY(-6px);box-shadow:0 18px 40px #641d3a18}.emoji{font-size:42px}.cat h3{font:normal 21px Georgia,serif;color:var(--wine);margin:9px 0}.cat p{font-size:13px;color:var(--muted);line-height:1.5}.cat span{color:var(--gold);font-size:12px;font-weight:800}
+.toolbar{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:25px}.search{flex:1;min-width:230px}.search input{width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:30px;background:#fff;outline:none}.filters{display:flex;gap:8px}.filter{border:1px solid var(--line);background:#fff;color:var(--wine);border-radius:22px;padding:10px 14px;font-weight:700;cursor:pointer}.filter.active{background:var(--wine);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 25px #641d3a0b;transition:.25s}.product:hover{transform:translateY(-5px);box-shadow:0 18px 40px #641d3a18}.pic{height:280px;background:#f2e9e4;position:relative}.pic img{width:100%;height:100%;object-fit:cover;display:block}.badge{position:absolute;left:12px;top:12px;background:#fff;border-radius:18px;padding:7px 10px;font-size:10px;font-weight:800;color:var(--wine)}.wish{position:absolute;right:12px;top:12px;border:0;border-radius:50%;width:36px;height:36px;background:#fff;color:var(--wine);font-size:18px;cursor:pointer}.wish.active{background:var(--wine);color:#fff}
+.info{padding:17px}.brand{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold);font-weight:800}.info h3{font:normal 18px Georgia,serif;color:var(--wine);margin:8px 0}.info p{font-size:13px;color:var(--muted);line-height:1.5;min-height:40px}.bottom{display:flex;justify-content:flex-end}.shop{display:inline-block;background:var(--wine);color:#fff;border-radius:22px;padding:10px 14px;font-size:12px;font-weight:800}
+.banner{max-width:1200px;margin:0 auto 20px;border-radius:28px;padding:34px 5%;background:linear-gradient(120deg,#641d3a,#8b4560);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h2{font:normal 29px Georgia,serif;margin:0 0 6px}.banner p{margin:0;color:#eadfe3}.banner a{background:#fff;color:var(--wine);padding:12px 19px;border-radius:24px;font-weight:800;white-space:nowrap}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.aboutCard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px}.aboutCard h2{font:normal 32px Georgia,serif;color:var(--wine)}.aboutCard p{color:var(--muted);line-height:1.75}
+footer{background:var(--wine);color:#eee5e8;text-align:center;padding:42px 20px;border-top:4px solid var(--gold)}footer .logo{color:#fff}footer p{font-size:13px;color:#cdbfc4}
+.modalBg{position:fixed;inset:0;background:#160b10aa;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal{width:min(760px,100%);background:#fff;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative}.modal img{width:100%;height:100%;min-height:400px;object-fit:cover}.close{position:absolute;right:12px;top:12px;border:0;background:#fff;border-radius:50%;width:38px;height:38px;font-size:21px;cursor:pointer}.modalInfo{padding:34px}.modalInfo h2{font:normal 30px Georgia,serif;color:var(--wine)}.modalInfo p{color:var(--muted);line-height:1.7}
+.empty{padding:40px;text-align:center;color:var(--muted);grid-column:1/-1;background:#fff;border:1px dashed var(--line);border-radius:20px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.cats{grid-template-columns:repeat(2,1fr)}.hero{margin:18px 4% 0}.about{grid-template-columns:1fr}}
+@media(max-width:650px){nav{padding:12px 4%;flex-wrap:wrap}.links{display:none;order:5;width:100%;justify-content:center;flex-wrap:wrap}.links.show{display:flex}.menu{display:block}.hero{grid-template-columns:1fr}.heroText{padding:48px 7%}.heroImg{min-height:360px}h1{font-size:43px}section{padding:55px 4%}.grid{grid-template-columns:1fr 1fr;gap:12px}.pic{height:220px}.banner{margin:0 4% 18px;display:block}.banner a{display:inline-block;margin-top:16px}.modal{grid-template-columns:1fr}.modal img{min-height:270px;max-height:310px}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.pic{height:280px}.cats{grid-template-columns:1fr}}
+</style></head><body>
+<div class="top">✨ Hand-picked ladies finds • Easy shopping • Beautiful style ✨</div>
+<nav><div class="logo">Trendy Ladies <span>Finds ✨</span></div><button class="menu" id="menu">☰</button><div class="links" id="links"><a href="index.html">Home</a><a href="#products">Products</a><a href="jewelry.html">Jewelry</a><a href="perfumes.html">Perfumes</a><a href="gifts.html">Gifts</a></div></nav>
+<header class="hero"><div class="heroText"><div class="eyebrow">TRENDY COLLECTION</div><h1>Beauty</h1><p>Pretty beauty and self-care inspiration for a fresh, feminine everyday routine.</p><a class="cta" href="#products">Explore Collection →</a></div><div class="heroImg"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d8289608113416fae8e1963232bb0dfS.jpg" alt="Beauty collection"><div class="heroTag"><b>💄 Beauty</b><small>Hand-picked finds worth discovering</small></div></div></header>
+<section><div class="head"><div class="eyebrow">EXPLORE MORE</div><h2>Shop by Category</h2><p>Move around the store easily.</p></div><div class="cats">
+<a class="cat" href="jewelry.html"><div class="emoji">💎</div><h3>Jewelry</h3><p>Elegant pieces for every look.</p><span>Explore →</span></a>
+<a class="cat" href="accessories.html"><div class="emoji">✨</div><h3>Accessories</h3><p>Pretty finishing touches.</p><span>Explore →</span></a>
+<a class="cat" href="bags.html"><div class="emoji">👜</div><h3>Bags</h3><p>Chic everyday bags.</p><span>Explore →</span></a>
+<a class="cat" href="beauty.html"><div class="emoji">💄</div><h3>Beauty</h3><p>Beauty and self-care picks.</p><span>Explore →</span></a>
+<a class="cat" href="perfumes.html"><div class="emoji">🌸</div><h3>Perfumes</h3><p>Lovely fragrances.</p><span>Explore →</span></a>
+<a class="cat" href="gifts.html"><div class="emoji">🎁</div><h3>Gift Ideas</h3><p>Lovely picks for someone special.</p><span>Explore →</span></a></div></section>
+<section id="products"><div class="head"><div class="eyebrow">HAND-PICKED</div><h2>Beauty Finds</h2><p>Tap “View Find” to see the seller's product page.</p></div>
+<div class="toolbar"><div class="search"><input id="search" placeholder="Search beauty..." oninput="filterProducts()"></div></div>
+<div class="grid" id="grid"><div class="empty"><h3 style="color:var(--wine);font:normal 25px Georgia,serif">Bags are coming next ✨</h3><p>Upload your bag affiliate products when ready and they can be added here without changing the design.</p></div></div></section>
+<div class="banner"><div><h2>Love this collection? ✨</h2><p>Save your favorite finds and discover more styles.</p></div><a href="index.html">Back to Home →</a></div>
+<footer><div class="logo">Trendy Ladies Finds ✨</div><p>Jewelry • Accessories • Bags • Beauty • Perfumes • Gift Ideas</p><p>© 2026 Trendy Ladies Finds. Affiliate links may earn a commission at no extra cost to you.</p></footer>
+<div class="modalBg" id="modalBg"><div class="modal"><button class="close" id="close">×</button><img id="mImg" src="" alt=""><div class="modalInfo"><div class="brand" id="mBrand"></div><h2 id="mTitle"></h2><p id="mDesc"></p><a class="cta" id="mLink" target="_blank" rel="nofollow sponsored noopener">Shop on AliExpress →</a></div></div></div>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');menu.onclick=()=>links.classList.toggle('show');
+function filterProducts(){const q=document.getElementById('search').value.toLowerCase().trim();document.querySelectorAll('.product').forEach(p=>p.style.display=p.innerText.toLowerCase().includes(q)?'block':'none')}
+document.querySelectorAll('.wish').forEach(b=>b.onclick=e=>{e.stopPropagation();b.classList.toggle('active');b.textContent=b.classList.contains('active')?'♥':'♡'});
+const bg=document.getElementById('modalBg'),mi=document.getElementById('mImg'),mt=document.getElementById('mTitle'),md=document.getElementById('mDesc'),mb=document.getElementById('mBrand'),ml=document.getElementById('mLink');
+document.querySelectorAll('.view').forEach(b=>b.onclick=()=>{const p=b.closest('.product');mi.src=p.querySelector('img').src;mi.alt=p.querySelector('img').alt;mt.textContent=p.querySelector('h3').textContent;md.textContent=p.querySelector('p').textContent;mb.textContent=p.querySelector('.brand').textContent;ml.href=b.href;bg.style.display='flex';document.body.style.overflow='hidden'});
+function closeModal(){bg.style.display='none';document.body.style.overflow=''}document.getElementById('close').onclick=closeModal;bg.onclick=e=>{if(e.target===bg)closeModal()};document.onkeydown=e=>{if(e.key==='Escape')closeModal()};
+</script></body></html>
